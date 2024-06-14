@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@drawable/bg"
+    >
+
+
+    <ImageView
+        android:id="@+id/hangman"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        app:srcCompat="@drawable/img0"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/hangman"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/word"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:letterSpacing="0.3"
+            android:text="______________"
+            android:textColor="@color/white"
+            android:textSize="30sp"
+            android:textStyle="italic|bold"
+            />
+
+        <EditText
+            android:id="@+id/letter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:gravity="center"
+            android:hint="Introducir Letra"
+            android:textColorHint="#2a2d37"
+            android:textColor="@color/white"
+            android:inputType="text"
+            android:maxLength="1"
+            android:textSize="24sp"
+            />
+
+        <Button
+            android:id="@+id/check"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:backgroundTint="#00031A"
+            android:onClick="CheckLetter"
+            android:text="CONFIRMAR"
+            android:textColor="#bb056f"
+            app:cornerRadius="10dp"
+            app:strokeColor="#bb056f"
+            app:strokeWidth="2dp"
+            />
+
+    </LinearLayout>
+
+</RelativeLayout>

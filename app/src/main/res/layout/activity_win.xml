@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/winbg">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/backMenu"
+            android:layout_width="250dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="430dp"
+            android:backgroundTint="#00031A"
+            android:onClick="backMenu"
+            android:text="VOLVER AL MENU"
+            android:textColor="#BBB205"
+            app:cornerRadius="10dp"
+            app:strokeColor="#BBB205"
+            app:strokeWidth="2dp" />
+
+    </LinearLayout>
+</RelativeLayout>
